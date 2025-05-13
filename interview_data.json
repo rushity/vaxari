@@ -1,0 +1,19 @@
+{
+    "fields": {
+        "database": {
+            "subfields": {
+                "dbms": {
+                    "questions": [
+                        {
+                            "text": "what is dbms?",
+                            "type": "exact",
+                            "answer": "Database Management System"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "hr_score": 1,
+    "hr_time_limit": 5
+}
