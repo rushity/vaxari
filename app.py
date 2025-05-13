@@ -163,11 +163,6 @@ def api_requirements():
     save_config(data)
     return jsonify({"status": "success"})
 
-# HR candidate management
-@app.route('/api/candidates', methods=['GET'])
-@login_required
-def api_get_candidates():
-    return jsonify(load_passed_candidates())
 
 @app.route('/api/config', methods=['GET'])
 @login1_required
