@@ -169,6 +169,12 @@ def api_requirements():
 def api_get_candidates():
     return jsonify(load_passed_candidates())
 
+@app.route('/api/config', methods=['GET'])
+@login1_required
+def get_config():
+    return jsonify(load_config())
+
+
 @app.route('/api/candidates/<candidate_id>', methods=['DELETE'])
 @login_required
 def api_delete_candidate(candidate_id):
